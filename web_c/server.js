@@ -1,14 +1,19 @@
-'use static';
+'use strict';
 
 const express = require('express');
-const multer = require('multer');
-
-const db = require('./model-mysql');
-const config = require('./config');
-
 const app = express();
+const PORT = 8080;
+
+
+app.use(express.static(__dirname + '/'));
+
+
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + 'hello');
+});
 
 //start the server
-  const port = process.env.PORT||8080;
-  app.listen(port,() => { console.log(`listening on port ${port}...`)
-  });
+app.listen(8080, (err) =>{
+    if(err) console.log('error starting the server', err);
+    else console.log('Hello');
+})

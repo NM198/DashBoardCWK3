@@ -1,0 +1,23 @@
+{
+  "name": "web_c",
+  "version": "1.0.0",
+  "description": "a simple dashboard interface",
+  "main": "index.html",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NM198/DashBoardCWK3.git"
+  },
+  "author": "Nikolas Markides",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NM198/DashBoardCWK3/issues"
+  },
+  "homepage": "https://github.com/NM198/DashBoardCWK3#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
