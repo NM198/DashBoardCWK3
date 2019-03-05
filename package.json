@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/NM198/DashBoardCWK3#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "googleapis": "^27.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
