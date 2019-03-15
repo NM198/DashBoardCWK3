@@ -6,8 +6,8 @@ body{
 }
 .vertical-section{
 width: 55%; /* Line width */
-border:5px solid #538ec1; /*line boarder*/
-height: 950px; /* Override in-line if you want specific height. */
+border:5px solid #C0C0C0; /*line boarder*/
+height: 450px; /* Override in-line if you want specific height. */
 float: left; /* Causes the line to float to left of content. You can instead use position:absolute or display:inline-block if this fits better with your design */
 }
 /* Global */
@@ -16,11 +16,7 @@ float: left; /* Causes the line to float to left of content. You can instead use
   margin:auto;
   overflow:hidden;
 }
-.calendar{
-  margin-left: 10px;
-  margin-top: 50px;
-  float:left;
-}
+
 
 ul{
   margin:0;
@@ -111,13 +107,41 @@ header a:hover{
 
 }
 
-/* Showcase */
-.clock{
-    margin-right: :-300px;
-    margin-left: 10px;
-    float: left;
+/* moveable elements */
+#clock{
+
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+#clockheader{
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #f1f1f1;
+  color: #fff;
+
+}
+#calendar{
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+
+}
+#calendarheader{
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #f1f1f1;
+  color: #fff;
+
 }
 
+/* Showcase */
 #showcase{
   min-height:400px;
   background:url('../img/showcase.jpg') no-repeat 0 -400px;
