@@ -38,27 +38,35 @@
           <ul>
 
 
-            <button <li class="button"><a href="index.html">Home</a></li></button>
-            <button <li class="button"><a class="fa fa-bars"><a href ="settings.html"> SETTINGS </a> </li></button>
+              <button class="btn"><i class="fa fa-home"></i><a href="index.html">...</a></button>
+
 
           </ul>
         </nav>
       </div>
     </header>
 
-    <div class="vertical-section" >
 
-
+    <div id ="buttonPos">
+      <button style = "background-color:#e23b56;color: black;" onclick="myFunction()">Edit Page</button>
     </div>
+        <div id="myDIV">
+          <button id ="backbutton"> Change Backround Color </button>
+
+        </div>
     <div id ="clock">
-    <div id ="clockheader" style="text-align:center;padding:1em 0;"> <h2><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/2639996"><span style="color:gray;">Current local time in</span><br />Portsmouth, United Kingdom</a></h2> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=large&timezone=Europe%2FLondon" width="100%" height="140" frameborder="0" seamless></iframe> </div>
+
+    <div id ="clockheader" style="text-align:center;padding:1em 0;"> <h2><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/2639996"><span style="color:gray;">Current local time in</span><br />Portsmouth, United Kingdom</a></h2> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=large&timezone=Europe%2FLondon" width="100%" height="140" frameborder="0" seamless></iframe><p> click to move</p> </div>
     </div>
     <p id='date'></p>
 
     <div id = "calendar">
     <div id="calendarheader">
+
+
         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=en-gb.uk%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=Europe%2FLondon"
         style="border-width:0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+          <p> click to move</p>
       </div>
     </div>
 
@@ -72,8 +80,10 @@
 
     <footer>
       <p>UP876586, Copyright &copy; 2019</p>
-    </footer>
+  </footer>
+
   <script type="text/javascript" src="scripts/moveable.js" charset="utf-8"></script>
+
   <script type="text/javascript" src="scripts/client.js" charset="utf-8"></script>
   </body>
 </html>

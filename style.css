@@ -3,10 +3,11 @@ body{
   padding:0;
   margin:0;
   background-color:#f4f4f4;
+
 }
 .vertical-section{
 width: 55%; /* Line width */
-border:5px solid #C0C0C0; /*line boarder*/
+border:5px ; /*line boarder*/
 height: 450px; /* Override in-line if you want specific height. */
 float: left; /* Causes the line to float to left of content. You can instead use position:absolute or display:inline-block if this fits better with your design */
 }
@@ -15,6 +16,16 @@ float: left; /* Causes the line to float to left of content. You can instead use
   width:80%;
   margin:auto;
   overflow:hidden;
+}
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 16px 32px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+
+
 }
 
 
@@ -106,25 +117,46 @@ header a:hover{
 
 
 }
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #778899;
+
+}
+#buttonPos{
+  position: absolute;
+  overflow: hidden;
+  margin-right:  0;
+  right: 0;
+  
+
+
+
+}
 
 /* moveable elements */
 #clock{
 
+    left:500px;
     position: absolute;
+
     z-index: 9;
-    background-color: #f1f1f1;
+    background-color:#538ec1;
     border: 1px solid #d3d3d3;
     text-align: center;
+
 }
 #clockheader{
   padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: #f1f1f1;
+  background-color: #DCDCDC;
   color: #fff;
 
 }
 #calendar{
+
   position: absolute;
   z-index: 9;
   background-color: #f1f1f1;
@@ -135,8 +167,8 @@ header a:hover{
 #calendarheader{
   padding: 10px;
   cursor: move;
-  z-index: 10;
-  background-color: #f1f1f1;
+  z-index: 100;
+  background-color: #DCDCDC;
   color: #fff;
 
 }
@@ -196,10 +228,14 @@ article#main-col{
 }
 
 footer{
-  padding:20px;
-  margin-top:20px;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  padding:15px;
+  margin-bottom: 0;
+  bottom: 0;
   color:#ffffff;
-  background-color:#538ec1;
+  background-color:#778899;
   text-align: center;
 }
 
