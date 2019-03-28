@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 //start the server
 app.listen(8080, (err) =>{
     if(err) console.log('error starting the server', err);
-    else console.log('server started on port 8080');
+    else console.log('DashBoard started on port 8080');
 })
 
 

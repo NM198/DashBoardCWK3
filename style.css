@@ -13,9 +13,11 @@ float: left; /* Causes the line to float to left of content. You can instead use
 }
 /* Global */
 .container{
-  width:80%;
+  width:100%;
+
   margin:auto;
   overflow:hidden;
+
 }
 .btn {
   background-color: DodgerBlue; /* Blue background */
@@ -24,8 +26,8 @@ float: left; /* Causes the line to float to left of content. You can instead use
   padding: 16px 32px; /* Some padding */
   font-size: 16px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
-
-
+  margin-left: 700px;
+  margin-top: -250px;
 }
 
 
@@ -54,21 +56,23 @@ button {
 
   margin-left: 350px;
   margin-bottom: 10px;
-  margin-top: -40px;
+  margin-top: -55px;
+  color: gray;
+  padding: 8px 16px;
 }
 
 /* Header **/
 header{
-  background:#35424a;
+  background-color:#35424a;
   color:#ffffff;
-  padding-top:10px;
-  min-height:70px;
-  border-bottom:#ffffff 3px solid;
-  border: 3px
+  padding-top:5px;
+  min-height:50px;
+  
 }
 img{
-  max-height: 300px;
+  max-height: 400px;
   width: 100%;
+  border-bottom:#8cd3ff 13px solid;
 }
 
 header a{
@@ -87,6 +91,7 @@ header li{
 
 header #branding{
   float:left;
+
 }
 
 header #branding h1{
@@ -95,7 +100,7 @@ header #branding h1{
 
 header nav{
   float:right;
-  margin-top:10px;
+  margin-top:5px;
 }
 
 header .highlight, header .current a{
@@ -111,9 +116,9 @@ header a:hover{
 }
 
 .g-signin2{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-left: 200px;
-  margin-top: -40px;
+  margin-top: -60px;
 
 
 }
@@ -129,7 +134,7 @@ header a:hover{
   overflow: hidden;
   margin-right:  0;
   right: 0;
-  
+
 
 
 
@@ -151,23 +156,6 @@ header a:hover{
   padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: #DCDCDC;
-  color: #fff;
-
-}
-#calendar{
-
-  position: absolute;
-  z-index: 9;
-  background-color: #f1f1f1;
-  border: 1px solid #d3d3d3;
-  text-align: center;
-
-}
-#calendarheader{
-  padding: 10px;
-  cursor: move;
-  z-index: 100;
   background-color: #DCDCDC;
   color: #fff;
 
@@ -231,7 +219,7 @@ footer{
   position: absolute;
   overflow: hidden;
   width: 100%;
-  padding:15px;
+  padding:5px;
   margin-bottom: 0;
   bottom: 0;
   color:#ffffff;

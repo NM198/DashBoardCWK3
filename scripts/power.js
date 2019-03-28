@@ -1,7 +1,12 @@
+'use strict';
+
+
 // Make the DIV element draggable:
 dragElement(document.getElementById("clock"));
-dragElement(document.getElementById("calendar"));
 
+
+
+//SECTION to make  clock, api move where disired by the user:
 
 
 function dragElement(elmnt) {
@@ -58,6 +63,7 @@ document.getElementById("backbutton").addEventListener("click", function(){
   body[0].style.backgroundColor = color;
 });
 
+// function to change backround color
 
 $("#backbutton").click(function() {
   //write funtion that generates random color and sticks it to the background per click;
@@ -72,12 +78,25 @@ $("#backbutton").click(function() {
 
 
 
-
+//Edit page:
 function myFunction() {
-  var x = document.getElementById("myDIV");
+  let x = document.getElementById("myDIV");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
     x.style.display = "block";
   }
 }
+
+// Function to change backround image:
+
+function changeimage(){
+    let image = document.getElementById('img');
+    if(image.src.match("/images/bann1.jpg")){
+      image.src = "/images/bann2.jpg";
+    }
+    else{
+      image.src = "/images/bann1.jpg";
+    }
+
+	}
