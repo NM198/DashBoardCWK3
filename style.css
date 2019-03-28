@@ -67,10 +67,10 @@ header{
   color:#ffffff;
   padding-top:5px;
   min-height:50px;
-  
+
 }
 img{
-  max-height: 400px;
+  height: 270px;
   width: 100%;
   border-bottom:#8cd3ff 13px solid;
 }
