@@ -12,13 +12,14 @@ height: 450px; /* Override in-line if you want specific height. */
 float: left; /* Causes the line to float to left of content. You can instead use position:absolute or display:inline-block if this fits better with your design */
 }
 /* Global */
-.container{
+.settings{
   width:100%;
 
   margin:auto;
   overflow:hidden;
 
 }
+
 .btn {
   background-color: DodgerBlue; /* Blue background */
   border: none; /* Remove borders */
@@ -54,11 +55,13 @@ button {
 /*google sign out **/
 .signOut{
 
-  margin-left: 350px;
-  margin-bottom: 10px;
-  margin-top: -55px;
-  color: gray;
+  margin-right: 1000px;
   padding: 8px 16px;
+}
+.g-signin2{
+  margin-top: -45px;
+
+
 }
 
 /* Header **/
@@ -115,16 +118,11 @@ header a:hover{
   font-weight:bold;
 }
 
-.g-signin2{
-  margin-bottom: 20px;
-  margin-left: 200px;
-  margin-top: -60px;
 
-
-}
 #myDIV {
   width: 100%;
-  padding: 50px 0;
+  height:15px;
+  padding: 35px 0;
   text-align: center;
   background-color: #778899;
 
@@ -151,22 +149,25 @@ header a:hover{
     color:white;
 
 }
-
-#news{
-  left:10px;
+#newsbox{
+  float:left;
+  height:380px;
+  width:490px;
+  overflow: auto;
+  right:1px;
+  top:320px;
   position: absolute;
   z-index: 9;
-  background-color:#538ec1;
-  border: 1px solid #d3d3d3;
+  border: 1px solid black;
   text-align: center;
-
 }
+
 #newsheader{
 
-  padding: 10px;
+  padding: 5px;
   cursor: move;
   z-index: 10;
-  background-color: #DCDCDC;
+  background-color:black;
   color: #fff;
 
 }
@@ -224,6 +225,7 @@ article#main-col{
   width:65%;
 }
 header{
+
     padding-bottom:20px;
     height: 20%;
     height: 20%;
@@ -232,13 +234,12 @@ header{
 #showcase h1{
   margin-top:40px;
 }
-
 /* weather app **/
 .cont{
-  width: 250px;
-  height: 250px;
-  margin: auto;
-  border-radius: 25px;
+  width: 300px;
+  height: 300px;
+  left:10px;
+  border-radius: 10px;
   box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3)
 }
 #temp, #humidity-div {
@@ -249,10 +250,7 @@ header{
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
-
 .city-icon-holder {
   position:absolute;
   left: 25%;
@@ -261,31 +259,26 @@ header{
           transform: translate(-50%, -50%);
   text-align: center;
 }
-
 #city-name {
   font-family: "Courier New";
   font-size: 30px;
   font-weight: bold;
   color: #fff;
 }
-
 #icon {
   width:70%;
 }
-
 #main{
   width: 100%;
   height: 100%;
   position: relative;
 }
-
 .city-icon {
   height: 80%;
   width: 50%;
   border-bottom-left-radius: 25px;
   background-color: #8c8c8c;
 }
-
 .temperature {
   position: absolute;
   left: 50%;
@@ -294,7 +287,6 @@ header{
   width: 50%;
   background-color: #9C27B0;
 }
-
 .humidity {
   height: 40%;
   width: 50%;
@@ -304,13 +296,11 @@ header{
   border-bottom-right-radius: 25px;
   background-color: #1ec0e9;
 }
-
 #search-btn {
   width: 40px;
-  height:40px;
+  height:30px;
   color: gray;
 }
-
 #search-txt {
   color: blue;
   height:30px;
@@ -321,14 +311,14 @@ header{
   padding-left:1px;
   text-align:center;
 }
-
 .search {
   position: absolute;
-  left: 50%;
-  top:460px;
+  left: 10%;
+  top:400px;
   -webkit-transform:translate(-50%,-50%);
           transform:translate(-50%,-50%);
 }
+
 
 footer{
   position: absolute;
