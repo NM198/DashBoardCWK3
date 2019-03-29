@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
 	  <meta name="keywords" content="">
-  	<meta name="author" content="">
+  	<meta name="nikolas markides" content="">
 
     <title>DashBoard | Welcome</title>
+<!-- STYLESHEETS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<!--...-->
   </head>
   <body>
 
       <img src="images/bann1.jpg" id ="img">
-
+<!--PAGE SETTINGS-->
       <div class="container">
         <div id="branding">
           <div id ="buttonPos">
@@ -26,7 +28,7 @@
                 <button id ="changeback" onclick= "changeimage()"> Change Image </button>
 
               </div>
-
+<!-- GOOGLE SIGN IN, SIGN OUT -->
           <h1><span class="highlight">Dash</span>Board</h1>
           <meta name="google-signin-client_id" content="850391124116-57e6rd61b09gcp2u8tk2jhrjdnmiso35.apps.googleusercontent.com">
           <div class="g-signin2" data-onsuccess="onSignIn"></div>
@@ -44,19 +46,55 @@
 
       </div>
     </header>
+<!--NEWS, CLOCK-->
+    <div id = "news" >
 
+      <div id ="newsheader" style="text-align:center;padding:1em 0;height: 250px;width:350px; "> <h2><a style="text-decoration:none;" ><span style="color:gray;">News</span></a></h2>  <p> click to move</p> </div>
 
+    </div>
 
     <div id ="clock">
 
-    <div id ="clockheader" style="text-align:center;padding:1em 0;"> <h2><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/2639996"><span style="color:gray;">Current local time in</span><br />Portsmouth, United Kingdom</a></h2> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=large&timezone=Europe%2FLondon" width="100%" height="140" frameborder="0" seamless></iframe><p> click to move</p> </div>
+    <div id ="clockheader" style="text-align:center;padding:1em 0;"> <h2><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/2639996"><span style="color:white;">Current local time in<br />Portsmouth, United Kingdom</span></a></h2> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=large&timezone=Europe%2FLondon" width="100%" height="140" frameborder="0" seamless></iframe><p> click to move</p> </div>
     </div>
-    <p id='date'></p>
+  <!-- weather-->
 
+  <div class="cont">
+    <header class="header">
+      <div class="search">
+        <input type="text" placeholder="Enter City Name" id="search-txt">
+        <a id="search-btn" href="#"><i class="fas fa-search"></i></a>
+      </div>
+    </header>
+
+    <main id="main">
+
+      <div class="city-icon">
+        <div class="city-icon-holder">
+        <div id="city-name"></div>
+        <img src="" alt="" id="icon">
+          </div>
+      </div>
+
+      <div class="temperature">
+        <div id="temp"></div>
+      </div>
+
+      <div class="humidity">
+        <div id="humidity-div"></div>
+      </div>
+
+    </main>
+
+  </div>
+    <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+
+  <!--.....-->
 
     <section id="boxes">
       <div class="container">
         <div class="box">
+
 
       </div>
     </section>
@@ -65,10 +103,10 @@
   <footer>
       <p>UP876586, Copyright &copy; 2019</p>
   </footer>
-
+<!--scripts-->
   <script type="text/javascript" src="scripts/power.js" charset="utf-8"></script>
-
-  <script type="text/javascript" src="scripts/client.js" charset="utf-8"></script>
-
+  <script type="text/javascript" src="scripts/weather.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/news.js" charset="utf-8"></script>
+<!--...-->
   </body>
 </html>

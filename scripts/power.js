@@ -3,7 +3,7 @@
 
 // Make the DIV element draggable:
 dragElement(document.getElementById("clock"));
-
+dragElement(document.getElementById("news"));
 
 
 //SECTION to make  clock, api move where disired by the user:
