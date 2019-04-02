@@ -18,31 +18,9 @@
 
       <img src="images/bann1.jpg" id ="img">
 <!--PAGE SETTINGS-->
-      <div class="settings">
-        <div id="branding">
-          <div id ="buttonPos">
-            <button style = "background-color:#e23b56;color: black;" onclick="myFunction()">Edit Page</button>
-          </div>
-              <div id="myDIV">
-                <button id ="backbutton"> Change Backround Color </button>
-                <button id ="changeback" onclick= "changeimage()"> Change Image </button>
-                <!-- GOOGLE SIGN IN, SIGN OUT -->
-                <meta name="google-signin-client_id" content="850391124116-57e6rd61b09gcp2u8tk2jhrjdnmiso35.apps.googleusercontent.com">
-                <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                <script src="https://apis.google.com/js/platform.js" async defer></script>
-                <div class="signOut"<a href="#" onclick="signOut();" style="color:white;">Sign out</a>
-                <script>
-                  function signOut() {
-                    var auth2 = gapi.auth2.getAuthInstance();
-                    auth2.signOut().then(function () {
-                      console.log('User signed out.');
-                    });  }
-                </script>
-              </div>
-              </div>
-          </div>
-      </div>
-    </header>
+
+            <button id = "settingspage"style = "background-color:#e23b56;color: black;margin-top:0px;" onclick="myFunction()"><a href ="settings.html">Settings</a> </button>
+
 <!--NEWS, CLOCK-->
 
 

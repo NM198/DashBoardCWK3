@@ -14,11 +14,10 @@ float: left; /* Causes the line to float to left of content. You can instead use
 /* Global */
 .settings{
   width:100%;
-
   margin:auto;
   overflow:hidden;
-
 }
+
 
 .btn {
   background-color: DodgerBlue; /* Blue background */
@@ -155,7 +154,7 @@ header a:hover{
   width:490px;
   overflow: auto;
   right:1px;
-  top:320px;
+  top:280px;
   position: absolute;
   z-index: 9;
   border: 1px solid black;
@@ -314,7 +313,7 @@ header{
 .search {
   position: absolute;
   left: 10%;
-  top:400px;
+  top:350px;
   -webkit-transform:translate(-50%,-50%);
           transform:translate(-50%,-50%);
 }
