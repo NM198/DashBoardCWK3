@@ -23,17 +23,32 @@
 
       <button id = "home"> <a href ="index.html">Home</a> </button>
 <!--PAGE SETTINGS-->
-      <div class="settings">
-        <div id="branding">
-          <div id ="buttonPos">
 
-                <button id ="backbutton"> Change Backround Color </button>
-                <button id ="changeback" onclick= "changeimage()"> Change Image </button>
+                <!--BACKROUND THEME FORM-->
+                <form action = "/changeTheme" method = "POST">
+                  Select Backround Color Theme:
+                  <select id = "backroundselect">
+                    <option value = "1"> Light Theme </option>
+                    <option value = "2"> Dark Theme </option>
+                  </select>
+                  <input type = "submit" name = "theme"  value = "confirm">
+                </form>
+              </br>
+                <!--Image select form-->
+                <form action = "/changeImage" method = "post">
+                  Select Backround Image:
+                  <select id = "imageselect">
+                    <option value = "3"> Abstract </option>
+                    <option value = "4"> Dessert </option>
+                  </select>
+                  <input type = "submit" name = "imge" onclick ="changeimage()" value = "confirm">
+                </form>
+
                 <!-- GOOGLE SIGN IN, SIGN OUT -->
                 <meta name="google-signin-client_id" content="850391124116-57e6rd61b09gcp2u8tk2jhrjdnmiso35.apps.googleusercontent.com">
                 <div class="g-signin2" data-onsuccess="onSignIn"></div>
                 <script src="https://apis.google.com/js/platform.js" async defer></script>
-                <div class="signOut"<a href="#" onclick="signOut();" style="color:white;">Sign out</a>
+                <div class="signOut"<a href="#" onclick="signOut();" style="color:gray;">Sign out</a>
                 <script>
                   function signOut() {
                     var auth2 = gapi.auth2.getAuthInstance();
@@ -42,9 +57,7 @@
                     });  }
                 </script>
               </div>
-              </div>
-          </div>
-      </div>
+
 
 
 
@@ -59,7 +72,8 @@
       <p>UP876586, Copyright &copy; 2019</p>
   </footer>
 <!--scripts-->
-  <script type="text/javascript" src="scripts/power.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/index.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/settings.js" charset="utf-8"></script>
 
 
 <!--...-->

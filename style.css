@@ -4,6 +4,7 @@ body{
   margin:0;
   background-color:#f4f4f4;
 
+
 }
 .vertical-section{
 width: 55%; /* Line width */
@@ -58,7 +59,7 @@ button {
   padding: 8px 16px;
 }
 .g-signin2{
-  margin-top: -45px;
+  margin-top: 30px;
 
 
 }
@@ -148,10 +149,13 @@ header a:hover{
     color:white;
 
 }
+
+
 #newsbox{
+
   float:left;
-  height:380px;
-  width:490px;
+  height:430px;
+  width:510px;
   overflow: auto;
   right:1px;
   top:280px;
@@ -163,6 +167,7 @@ header a:hover{
 
 #newsheader{
 
+   margin: 0em auto;
   padding: 5px;
   cursor: move;
   z-index: 10;
@@ -170,6 +175,33 @@ header a:hover{
   color: #fff;
 
 }
+#youtube{
+
+    float:left;
+    height:430px;
+    width:580px;
+    overflow: auto;
+    right:36%;
+    top:280px;
+    position: absolute;
+    z-index: 9;
+    border: 1px solid black;
+    text-align: center;
+
+
+}
+
+#youtubeheader{
+  margin: 0em auto;
+ padding: 5px;
+ cursor: move;
+ z-index: 10;
+ background-color:black;
+
+
+}
+
+
 /* Showcase */
 #showcase{
   min-height:400px;
@@ -317,7 +349,10 @@ header{
   -webkit-transform:translate(-50%,-50%);
           transform:translate(-50%,-50%);
 }
-
+.printNews{
+    margin:0em auto;
+    font-size:2em;
+}
 
 footer{
   position: absolute;

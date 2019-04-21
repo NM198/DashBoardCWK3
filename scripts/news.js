@@ -3,6 +3,8 @@
 $(document).ready(()=>{
 	getNews();
 
+
+
 	function getNews()
 	{
 		let endPoint = "https://newsapi.org/v1/articles";
@@ -83,4 +85,8 @@ $(document).ready(()=>{
 	        array[j] = temp;
 	    }
 	}
+
+
+
+
 });
