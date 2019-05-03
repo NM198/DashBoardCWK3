@@ -9,7 +9,7 @@ $(document).ready(()=>{
 	{
 		let endPoint = "https://newsapi.org/v1/articles";
 		let apiKey = "7a6b1574f2be4170947fec9be4dece63";
-		//sources can be added from the included links.txt
+
 		let urls = [
 			`${endPoint}?source=engadget&sortBy=latest&apiKey=${apiKey} `,
 			`${endPoint}?source=fortune&sortBy=latest&apiKey=${apiKey} `
@@ -23,7 +23,6 @@ $(document).ready(()=>{
 				console.log("JSON data has been retrieved from " + data.source);
 				let news = data.articles; //get only the news articles
 				allResults.push(news)
-				// printNews(news);
 				real();
 			})
 		};
@@ -43,7 +42,6 @@ $(document).ready(()=>{
 	//display thew news
 	function printNews(result)
 	{
-
 		let res=[];
 		//flatten the array of nested objects into one single array
 		result.map(list=>{
@@ -59,7 +57,6 @@ $(document).ready(()=>{
 		let output = "";
 		for(let i = 0; i < res.length; i++)
 		{
-
 			let link =  res[i].url;
 			let resultDiv = `
 				<div class="col-sm-4 col-md-4">
@@ -68,7 +65,6 @@ $(document).ready(()=>{
 						<div class="caption">
 							<h2> ${res[i].title} </h2>
 							<h4> ${res[i].description} </h4>
-							<p><a href="${link}" target="_blank" class="btn btn-primary" role="button">View Article</a> </p>
 						</div>
 					</div>
 				</div>	`
@@ -85,8 +81,4 @@ $(document).ready(()=>{
 	        array[j] = temp;
 	    }
 	}
-
-
-
-
 });

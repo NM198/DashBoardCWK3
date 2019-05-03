@@ -9,31 +9,12 @@ const app = express();
 
 const PORT = 8080;
 
-app.use(bodyParser.urlencoded({extended : true}));
+const urlencodedParser = bodyParser.urlencoded({extended: false});
 
 app.use(express.static(__dirname + '/'));
 
-
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/index.html');
-});
-
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/settings.html');
-});
-
-app.post('/changeImage', function(req,res){
-  let request = req.body.selValue;
-
-  res.redirect('/index.html');
-});
-
-app.post('/changeTheme', function(req,res){
-  console.log(req.body.imge);
-  res.redirect('/index.html');
-});
-
-
+var LocalStorage = require('node-localstorage').LocalStorage,
+localStorage = new LocalStorage('./scratch');
 
 //start the server
 app.listen(8080, (err) =>{

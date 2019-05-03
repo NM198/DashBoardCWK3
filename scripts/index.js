@@ -4,9 +4,10 @@
 dragElement(document.getElementById("clock"));
 dragElement(document.getElementById("newsbox"));
 dragElement(document.getElementById("youtube"));
+dragElement(document.getElementById("quote"));
 
 
-//SECTION to make  clock, api move where disired by the user:
+//SECTION to make  clock,news, youtube  apis move where disired by the user:
 
 
 function dragElement(elmnt) {
@@ -22,11 +23,11 @@ function dragElement(elmnt) {
   function dragMouseDown(e) {
     e = e || window.event;
     e.preventDefault();
-    // get the mouse cursor position at startup:
+
     pos3 = e.clientX;
     pos4 = e.clientY;
     document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
+
     document.onmousemove = elementDrag;
   }
 
@@ -49,42 +50,48 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
-//function changeback(){
-//document.getElementById("backbutton").addEventListener("click", function(){
-    //write funtion that generates random color and sticks it to the background per click;
-//    var r = Math.floor((Math.random() * 256));
-//    var g = Math.floor((Math.random() * 256));
-//    var b = Math.floor((Math.random() * 256));
-//    console.log(r,g,b);
-//    var color = 'rgb'+'('+r+','+g+','+b+')';
-//    console.log(color);
-//    document.body.style.backgroundColor = color;
-//  var body = document.getElementsByTagName("body");
-//  console.log(body[0]);
-//  body[0].style.backgroundColor = color;
-//});
 
-// function to change backround color
+//// SETTINGS:
+///
+//
 
-//$("#backbutton").click(function() {
-  //write funtion that generates random color and sticks it to the background per click;
-//  var r = Math.floor(Math.random() * 256);
-//  var g = Math.floor(Math.random() * 256);
-//  var b = Math.floor(Math.random() * 256);
-//  console.log(r, g, b);
-//  var color = "rgb" + "(" + r + "," + g + "," + b + ")";
-//  console.log(color);
-//  $('body').css('background-color', color);
-//});
-
-
+//function to hide and show settings for page.
 function myFunction() {
   let x = document.getElementById("myDIV");
   if (x.style.display === "block") {
-    x.style.display = "none";
+   x.style.display = "none";
   } else {
     x.style.display = "block";
   }
 }
+//function to enable dark mode
+  function changeback(){
+    let col = document.body.style.backgroundColor = "black";
+    if(col.value ===black){
+      col.body.style.backgroundColor = "White";
+
+    }else{
+      col.body.style.backgroundColor = "black";
+    }
+
+  }
 
 // Function to change backround image:
+function changeimage(){
+    let image = document.getElementById('img');
+    if(image.src.match("/images/bann1.jpg")){
+      image.src = "/images/bann2.jpg";
+    }
+    else{
+      image.src = "/images/bann1.jpg";
+    }
+	}
+//function to enable/disable backround music
+  function aud_play_pause() {
+    var myAudio = document.getElementById("myAudio");
+    if (myAudio.paused) {
+      myAudio.play();
+    } else {
+      myAudio.pause();
+    }
+  }

@@ -1,5 +1,4 @@
 const appKey = "95a6615b248a9b9de4148ec7ba745f7e";
-
 let searchButton = document.getElementById("search-btn");
 let searchInput = document.getElementById("search-txt");
 let cityName = document.getElementById("city-name");
@@ -9,7 +8,7 @@ let humidity = document.getElementById("humidity-div");
 
 
 searchButton.addEventListener("click", findWeatherDetails);
-searchInput.addEventListener("keyup", enterPressed);
+searchInput.value = 'portsmouth';
 
 
 
@@ -20,8 +19,6 @@ function enterPressed(event) {
 }
 function findWeatherDetails() {
   if (searchInput.value === "") {
-
-
   }else {
     let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + "&appid="+appKey;
    httpRequestAsync(searchLink, theResponse);
@@ -38,7 +35,6 @@ function theResponse(response){
 
 function httpRequestAsync(url, callback)
 {
-  console.log("hello");
     var httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = () => {
         if (httpRequest.readyState == 4 && httpRequest.status == 200)
