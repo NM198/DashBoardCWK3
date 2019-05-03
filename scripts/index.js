@@ -16,11 +16,11 @@ function dragElement(elmnt) {
     // if present, the header is where you move the DIV from:
     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
   } else {
-    // otherwise, move the DIV from anywhere inside the DIV:
+    //otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
   }
 
-  function dragMouseDown(e) {
+function dragMouseDown(e) {
     e = e || window.event;
     e.preventDefault();
 
@@ -31,7 +31,7 @@ function dragElement(elmnt) {
     document.onmousemove = elementDrag;
   }
 
-  function elementDrag(e) {
+function elementDrag(e) {
     e = e || window.event;
     e.preventDefault();
     // calculate the new cursor position:
@@ -44,8 +44,8 @@ function dragElement(elmnt) {
     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
   }
 
-  function closeDragElement() {
-    // stop moving when mouse button is released:
+function closeDragElement() {
+// stop moving when mouse button is released:
     document.onmouseup = null;
     document.onmousemove = null;
   }
@@ -55,7 +55,7 @@ function dragElement(elmnt) {
 ///
 //
 
-//function to hide and show settings for page.
+//Function to hide and show settings for page.
 function myFunction() {
   let x = document.getElementById("myDIV");
   if (x.style.display === "block") {
@@ -64,16 +64,17 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-//function to enable dark mode
-  function changeback(){
-    let col = document.body.style.backgroundColor = "black";
-    if(col.value ===black){
-      col.body.style.backgroundColor = "White";
 
+//Function to enable dark mode
+function changeback(){
+    let col = document.body.style.backgroundColor = "black";
+    if(col.value === "black"){
+      col.body.style.backgroundColor = "White";
     }else{
       col.body.style.backgroundColor = "black";
     }
-
+    localStorage.setItem('backroundcolor', 'col');
+    console.log(localStorage.getItem('backroundcolor'));
   }
 
 // Function to change backround image:
@@ -85,9 +86,11 @@ function changeimage(){
     else{
       image.src = "/images/bann1.jpg";
     }
+    localStorage.setItem('backroundimage', 'image');
+    console.log(localStorage.getItem('backroundimage'));
 	}
 //function to enable/disable backround music
-  function aud_play_pause() {
+function aud_play_pause() {
     var myAudio = document.getElementById("myAudio");
     if (myAudio.paused) {
       myAudio.play();
