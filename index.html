@@ -6,7 +6,6 @@
     <meta name="description" content="">
 	  <meta name="keywords" content="">
   	<meta name="nikolas markides" content="">
-
     <title>DashBoard | Welcome</title>
                       <!-- STYLESHEETS -->
     <link rel="stylesheet" href="style.css">
@@ -23,7 +22,7 @@
                 <div id="myDIV">
                   <button id ="backbutton" onclick="changeback()"> Enable Dark Mode </button>
                   <button id ="changeImage" onclick= "changeimage()"> Change Image </button>
-                  <button id ="enablemusic"> Change News Src </button>
+                  <button onclick="upimage()"> Upload Image </button>
                   <audio id="myAudio"
                    <source src="music/m1.mp3"
                            type='audio/mp3'>
@@ -53,10 +52,10 @@
                       <!--BANNER IMAGE-->
       <img src="images/bann1.jpg"  id ="img">
 
-                      <!--APIS.....-->
 
 
-                      <!--NEWS-->
+
+                      <!--NEWS API -->
 
     <div id ="newsbox">
     <div id ="newsheader">
@@ -87,7 +86,7 @@
     <div id ="clockheader" style="text-align:center;padding:1em 0;"> <h2><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/2639996"><span style="color:white;">Current local time in<br />Portsmouth, United Kingdom</span></a></h2> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=large&timezone=Europe%2FLondon" width="100%" height="140" frameborder="0" seamless></iframe><p> click to move</p> </div>
     </div>
 
-                    <!-- YOUTUBE -->
+                    <!-- YOUTUBE API -->
     <div class ="contai">
 
     <div id= "youtube">
@@ -98,9 +97,8 @@
       </section>
     </div>
   </div>
-                    <!-- GUOTE -->
+                    <!-- GUOTE API -->
     <div id = "quote">
-
       <div id = "quoteheader">
         <p id='random_quote'></p>
 
@@ -108,7 +106,7 @@
       </div>
     </div>
 
-                    <!-- WEATHER-->
+                    <!-- WEATHER API-->
 
   <div class="cont">
     <header class="header">

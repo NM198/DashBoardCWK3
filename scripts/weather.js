@@ -1,3 +1,5 @@
+'use strict';
+
 const appKey = "95a6615b248a9b9de4148ec7ba745f7e";
 let searchButton = document.getElementById("search-btn");
 let searchInput = document.getElementById("search-txt");
@@ -11,7 +13,7 @@ searchButton.addEventListener("click", findWeatherDetails);
 searchInput.value = 'portsmouth';
 
 
-
+//to search for
 function enterPressed(event) {
   if(event.key === "Enter") {
     findWeatherDetails();
@@ -20,6 +22,7 @@ function enterPressed(event) {
 function findWeatherDetails() {
   if (searchInput.value === "") {
   }else {
+    //get details
     let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + "&appid="+appKey;
    httpRequestAsync(searchLink, theResponse);
   }

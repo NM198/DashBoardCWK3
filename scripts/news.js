@@ -1,20 +1,21 @@
+'use strict';
 
+//Get News and shuffle through:
 
 $(document).ready(()=>{
 	getNews();
 
-
-
 	function getNews()
 	{
+		//
 		let endPoint = "https://newsapi.org/v1/articles";
 		let apiKey = "7a6b1574f2be4170947fec9be4dece63";
-
+		//latest news sources
 		let urls = [
 			`${endPoint}?source=engadget&sortBy=latest&apiKey=${apiKey} `,
 			`${endPoint}?source=fortune&sortBy=latest&apiKey=${apiKey} `
 		];
-
+		//gt all results
 		let allResults = [];
 
 		let count = urls.length-1;
@@ -34,20 +35,19 @@ $(document).ready(()=>{
 				count--;
 			}
 			else
-				//allResults is  an arrray of nested objects
 				printNews(allResults);
 		}
 	}
 
-	//display thew news
+	//display the news
 	function printNews(result)
 	{
 		let res=[];
 		//flatten the array of nested objects into one single array
 		result.map(list=>{
-			// console.log(list)
+
 			return list.map(item=>{
-				// console.log(item)
+
 				res.push(item)
 			})
 		})
@@ -72,7 +72,7 @@ $(document).ready(()=>{
 		}
 		$('.printResults').html(output);
 	}
-
+//shuffle
 	function shuffleArray(array) {
 	    for (var i = array.length - 1; i > 0; i--) {
 	        var j = Math.floor(Math.random() * (i + 1));

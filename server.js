@@ -5,16 +5,20 @@ const bodyParser = require('body-parser');
 const app = express();
 
 
-
-
 const PORT = 8080;
 
 const urlencodedParser = bodyParser.urlencoded({extended: false});
 
 app.use(express.static(__dirname + '/'));
 
+//for local storage setup
 var LocalStorage = require('node-localstorage').LocalStorage,
 localStorage = new LocalStorage('./scratch');
+
+//index 
+app.get("/index.html" ,function(req,res){
+  res.redirect("/index.html");
+})
 
 //start the server
 app.listen(8080, (err) =>{

@@ -8,8 +8,6 @@ dragElement(document.getElementById("quote"));
 
 
 //SECTION to make  clock,news, youtube  apis move where disired by the user:
-
-
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
@@ -98,3 +96,10 @@ function aud_play_pause() {
       myAudio.pause();
     }
   }
+
+//function to uploadImage
+function upimage() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "file");
+  document.body.appendChild(x);
+}
